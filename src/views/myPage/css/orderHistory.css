@@ -1,0 +1,10 @@
+#orderHistory .orderList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -1rem;
+}
+
+#orderHistory .orderList .order {
+    padding: 0 1rem;
+}

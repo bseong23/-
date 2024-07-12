@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내 정보</title>
+    <link rel="stylesheet" href="../HeaderFooter/header.css">
+    <link rel="stylesheet" href="../HeaderFooter/footer.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/myPrivacy.css">
+    <link rel="stylesheet" href="css/resign.css">
+    <link rel="stylesheet" href="css/orderHistory.css">
+    <script src="myPage.js" type="module" defer></script>    
+</head>
+<body>
+    <!-- 헤더 -->
+    <header>
+      <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <img class="interface_logo" src="../image/menu-burger.png" alt="menu-burger">
+        </label>
+        <div class="sidebar">
+          <div class="categoryItem">
+            <a href="../test/test.html">의류</a>  
+          </div>
+        </div>
+      </nav>
+      <a class="main_logo" href="../home/home.html"><img class="team_logo" src="../image/localhost_logo4.png" alt="team_logo"></a>
+      <form class="searchBox">
+        <input type="text" placeholder="Search">
+        <img class="search" src="../image/search.png" alt="">
+      </form>
+      <div class="interface">  
+        <a class="sign" id="signIn" href=""></a>
+        <a class="sign" id="signUp" href="">Sign Up</a>
+        <a class="interface_logo" id="myPage" href=""><img src="../image/user.png" alt=""></a>
+        <a class="interface_logo" id="cartLogo" href="../cart/cart.html"><img src="../image/cart.png" alt=""></a>
+      </div>
+    </header>
+
+    <!-- 메인-->
+    <main>
+        <!-- 사이드바-->
+        <div class="container">
+            <div class="sidebar">
+                <div class="profile">
+                    <a href="#"><img class="profile_img" src="../elice-rabbit.png" alt="profile"></a>
+                    <p class="profile_name">이름</p>
+                    <p class="profile_email">이메일</p>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#" id="privacy">개인정보수정</a></li>
+                        <li><a href="#" id="order">내 주문</a></li>
+                        <li><a href="#" id="resign">회원탈퇴</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 메인화면-->
+            <div class="setMain">
+            </div>
+        </div>
+    </main>
+
+    <!-- 푸터 -->
+    <div id="footer">
+      <a class="footer_logo" href="../home/home.html"><img src="../image/localhost_logo4.png" alt="team_logo"></a>
+      <a class="logo" href="https://www.facebook.com/"><img class="social_logo" src="../image/facebook_logo.png" alt="facebook_logo"></a>
+      <a class="logo" href="https://www.youtube.com/"><img class="social_logo" src="../image/youtube_logo.png" alt="youtube_logo"></a>
+      <a class="logo" href="https://www.instagram.com/"><img class="social_logo" src="../image/instagram_logo.png" alt="instagram_logo"></a>
+      <p id="git_address"><a href="https://kdt-gitlab.elice.io/sw_track/class_09/web_project1/team03/localhost-3000/-/blob/master/README.md">GitLab</a></p>
+    </div>
+    
+  </footer>
+</body>
+</html>

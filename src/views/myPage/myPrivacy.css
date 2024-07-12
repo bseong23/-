@@ -1,0 +1,68 @@
+.setMain{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; 
+    align-items: center;
+    margin-left: auto;
+    overflow-y: auto;
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  #editProfileForm h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  #editProfileForm form {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  #editProfileForm .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .setMain label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .setMain input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center; 
+  }
+  
+  .setMain button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    align-self: center;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .setMain button:hover {
+    background-color: #0056b3;
+  }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="test.js" type="module" defer></script>
+  <style>
+    .addImage {
+      width: 400px;
+      height: 500px;
+      background-color: lightgray;
+      border-radius: 20px 20px / 20px 20px;
+      overflow: hidden;
+      margin: 0px 10px 10px 0px;
+    }
+    .inputImg {
+      width: 450px;
+      height: 700px;
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body>
+  <form class="inputImg" method="post" enctype="multipart/form-data"> <!-- 이미지 파일 데이터에 알맞는 enctype 설정 -->
+    <div class="addImage" id="image-show"> <!-- 이미지 띄울 공간 -->
+    </div>
+    <input type="file" accept="image/*" id="fileInput"/>
+    <label for="name">상품명
+    </label>
+    <input type="text" id="name">
+    <label for="price">가격
+    </label>
+    <input type="number" id="price">
+    <label for="stock">수량
+    </label>
+    <input type="number" id="stock">
+    <label for="category">카테고리</label>
+    <select name="category" id="category">
+      
+    </select>
+    
+  </form>
+  <br>
+  <button id="addItem">상품추가하기</button>
+</body>
+</html>

@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header{
+  width: 100%;
+  height: 120px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  border-bottom: 2px solid black;
+}
+nav {
+  flex-grow: 0;
+  padding: 1.5rem 2rem;
+  align-self: center;
+  z-index: 2;
+}
+.checkbtn {
+  font-size: 1.5em;
+  color: white;
+  cursor: pointer;
+}
+#check {
+  display: none;
+}
+#check:checked ~ .sidebar {
+  display: block;
+}
+.sidebar {
+  display: none;
+  position: absolute;
+  width: 100px;
+}
+.sidebar a {
+  color: #000;
+  background-color: white;
+  padding: 1rem 1.5rem;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+.searchBox {
+  height: 100%;
+  display: flex;
+  position: relative;
+  flex-grow: 4;
+}
+.searchBox input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  padding: 1%;
+  text-indent: 10px;
+  font-size: 25px;
+  align-self: center;
+  position: relative;
+  z-index: 2;
+}
+img.search {
+  width: 33px;
+  height: 33px;
+  align-self: center;
+  position: absolute;
+  right: 7px;
+  z-index: 3;
+}
+.interface {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  z-index: 2;
+  margin-right: 50px;
+}
+
+
+
+a.interface_logo img{
+  width: 33px;
+  height: 33px;
+  justify-content: center;
+  align-self: center;
+  z-index: 2;
+}
+.interface a.sign {
+  text-decoration: none;
+  align-self: center;
+  border: none;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #000;
+  height: 30px;
+  width: 80px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+.main_logo {
+  align-self: center;
+  flex-grow: 1;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.team_logo{
+  width: 184px;
+  height: 80%;
+}
